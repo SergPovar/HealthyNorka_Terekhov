@@ -144,6 +144,8 @@ public class DepartamentHRController : Controller
     public List<string> GetAllJobTitle()
     {
        var jobTitles= Enum.GetNames(typeof(JobTitles));
-       return jobTitles.ToList();
+        var list = jobTitles.ToList();
+        list.Remove("НетДолжности");
+       return list;
     }
 }
