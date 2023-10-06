@@ -73,7 +73,7 @@ public class CheckpointController : Controller
     [HttpPost("EndShift")]
     public IActionResult EndShift([Required] int id, [Required] string endShift, [Required] string startShift)
     {
-        var lastShift = new WorkShift();
+        WorkShift lastShift;
         DateTime dateStart;
         DateTime dateEnd;
         try
