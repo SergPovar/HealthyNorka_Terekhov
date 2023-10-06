@@ -50,7 +50,7 @@ public class DepartamentHRController : Controller
     [HttpPost("UpdateEmployee")]
     public IActionResult UpdateEmployee([Required] int id, string? lastName, string? firstName, JobTitles jobTitles)
     {
-        var employee = new Employee();
+       Employee employee;
         using (var db = new ApplicationContext())
         {
            employee = db.Employees.FirstOrDefault(x => x.Id == id);
@@ -143,8 +143,7 @@ public class DepartamentHRController : Controller
     [HttpGet("GetAllJobTitle")]
     public List<string> GetAllJobTitle()
     {
-       var jobTitles= Enum.GetNames(typeof(JobTitles));
-        var list = jobTitles.ToList();
+       var list= Enum.GetNames(typeof(JobTitles)).ToList();
         list.Remove("НетДолжности");
        return list;
     }
