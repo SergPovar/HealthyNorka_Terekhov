@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthyNorka_Terekhov</name>
+    </assembly>
+    <members>
+        <member name="M:HealthyNorka_Terekhov.CheckpointController.StartShift(System.Int32,System.String,System.String)">
+            <summary>
+            Открытие смены
+            </summary>
+            <remarks>
+            Пример запроса:
+                    id : 1, 
+               startShift : "1990/12/11 10:11",
+               endShift : "1990/12/11 19:11"
+            </remarks>
+        </member>
+        <member name="M:HealthyNorka_Terekhov.CheckpointController.EndShift(System.Int32,System.String,System.String)">
+            <summary>
+            Закрытие смены
+            </summary>
+            <remarks> 
+            Пример запроса:
+                    id : 1, 
+               startShift : "1990/12/11 10:11",
+               endShift : "1990/12/11 19:11"
+            </remarks>
+        </member>
+        <member name="M:HealthyNorka_Terekhov.DepartamentHRController.AddEmployee(System.String,System.String,HealthyNorka_Terekhov.JobTitles)">
+            <summary>
+            Добавление сотрудника
+            </summary>
+            <remarks> 
+            Пример запроса:
+                 "lastName" : "Иванов",
+                 "firstName":"Иван",
+                 "jobTitle" : "Engineer"
+            </remarks>
+        </member>
+        <member name="M:HealthyNorka_Terekhov.DepartamentHRController.UpdateEmployee(System.Int32,System.String,System.String,HealthyNorka_Terekhov.JobTitles)">
+            <summary>
+            Обновить данные сотрудника
+            </summary>
+            <remarks> 
+            Пример запроса:
+                "Id" : "1"
+                "lastName" : "Иванов",
+                "firstName":"Иван",
+                "jobTitle" : "Engineer"
+            </remarks>
+        </member>
+        <member name="M:HealthyNorka_Terekhov.DepartamentHRController.GetEmployees(HealthyNorka_Terekhov.JobTitles)">
+            <summary>
+            Получить список сотрудников
+            </summary>
+            <remarks> 
+            Пример запроса:
+                 "jobTitle" : "Engineer"
+            </remarks>
+        </member>
+        <member name="M:HealthyNorka_Terekhov.DepartamentHRController.DeleteEmployee(System.Int32)">
+            <summary>
+            Удалить сотрудника
+            </summary>
+            <remarks> 
+            Пример запроса:
+                 "Id" : "1"
+            </remarks>
+        </member>
+        <member name="M:HealthyNorka_Terekhov.DepartamentHRController.GetAllJobTitle">
+            <summary>
+            Получить список всех должностей
+            </summary>
+        </member>
+        <member name="F:HealthyNorka_Terekhov.JobTitles.НетДолжности">
+            <summary>
+            none
+            </summary>
+        </member>
+        <member name="F:HealthyNorka_Terekhov.JobTitles.Менеджер">
+            <summary>
+            Менеджер
+            </summary>
+        </member>
+        <member name="F:HealthyNorka_Terekhov.JobTitles.Тестировщик">
+            <summary>
+            Тестировщик
+            </summary>
+        </member>
+        <member name="F:HealthyNorka_Terekhov.JobTitles.Инженер">
+            <summary>
+            Инженер
+            </summary>
+        </member>
+    </members>
+</doc>
